@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tg bot</title>
+</head>
+
+<style>
+    form{
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+        margin: 200px auto;
+    }
+
+    input[type='text'],
+    input[type='email'],
+    button{
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+
+    button{
+        background-color: rgb(134, 65, 194);
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    #success{
+        display: none;
+        padding: 10px;
+        background-color: rgb(134, 65, 194);
+        color: #fff;
+    }
+</style>
+
+<body>
+    <form id="tg">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="text" name="number" placeholder="Number" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <div class="form-group">
+            <label for="formFile" class="form-label"></label>
+            <input type="file" name="document" class="form-control" id="formFile" required>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="success">
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
